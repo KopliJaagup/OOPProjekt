@@ -231,6 +231,246 @@ public class Punktitabel {
         }
     }
 
+    public int getP1_yks() {
+        if (p1_yks == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p1_yks);
+        }
+    }
+
+    public int getP1_kaks() {
+        if (p1_kaks == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p1_kaks);
+        }
+    }
+
+    public int getP1_kolm() {
+        if (p1_kolm == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p1_kolm);
+        }
+    }
+
+    public int getP1_neli() {
+        if (p1_neli == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p1_neli);
+        }
+    }
+
+    public int getP1_viis() {
+        if (p1_viis == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p1_viis);
+        }
+    }
+
+    public int getP1_kuus() {
+        if (p1_kuus == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p1_kuus);
+        }
+    }
+
+    public int getP1_paar() {
+        if (p1_paar == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p1_paar);
+        }
+    }
+
+    public int getP1_kakspaar() {
+        if (p1_kakspaar == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p1_kakspaar);
+        }
+    }
+
+    public int getP1_kolmik() {
+        if (p1_kolmik == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p1_kolmik);
+        }
+    }
+
+    public int getP1_nelik() {
+        if (p1_nelik == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p1_nelik);
+        }
+    }
+
+    public int getP1_vrida() {
+        if (p1_vrida == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p1_vrida);
+        }
+    }
+
+    public int getP1_srida() {
+        if (p1_srida == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p1_srida);
+        }
+    }
+
+    public int getP1_maja() {
+        if (p1_maja == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p1_maja);
+        }
+    }
+
+    public int getP1_chance() {
+        if (p1_chance == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p1_chance);
+        }
+    }
+
+    public int getP1_yatzy() {
+        if (p1_yatzy == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p1_yatzy);
+        }
+    }
+
+    public int getP2_yks() {
+        if (p2_yks == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p2_yks);
+        }
+    }
+
+    public int getP2_kaks() {
+        if (p2_kaks == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p2_kaks);
+        }
+    }
+
+    public int getP2_kolm() {
+        if (p2_kolm == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p2_kolm);
+        }
+    }
+
+    public int getP2_neli() {
+        if (p2_neli == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p2_neli);
+        }
+    }
+
+    public int getP2_viis() {
+        if (p2_viis == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p2_viis);
+        }
+    }
+
+    public int getP2_kuus() {
+        if (p2_kuus == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p2_kuus);
+        }
+    }
+
+    public int getP2_paar() {
+        if (p2_paar == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p2_paar);
+        }
+    }
+
+    public int getP2_kakspaar() {
+        if (p2_kakspaar == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p2_kakspaar);
+        }
+    }
+
+    public int getP2_kolmik() {
+        if (p2_kolmik == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p2_kolmik);
+        }
+    }
+
+    public int getP2_nelik() {
+        if (p2_nelik == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p2_nelik);
+        }
+    }
+
+    public int getP2_vrida() {
+        if (p2_vrida == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p2_vrida);
+        }
+    }
+
+    public int getP2_srida() {
+        if (p2_srida == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p2_srida);
+        }
+    }
+
+    public int getP2_maja() {
+        if (p2_maja == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p2_maja);
+        }
+    }
+
+    public int getP2_chance() {
+        if (p2_chance == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p2_chance);
+        }
+    }
+
+    public int getP2_yatzy() {
+        if (p2_yatzy == "-") {
+            return -1;
+        } else {
+            return Integer.parseInt(p2_yatzy);
+        }
+    }
+
     public void näitatabel1() {
         System.out.printf("--------------------------------------%n");
         System.out.printf("|                YATZY               |%n");
@@ -254,7 +494,7 @@ public class Punktitabel {
         System.out.printf("| %-10s | %-9s | %-9s |%n", "Väike rida", "-", "-");
         System.out.printf("| %-10s | %-9s | %-9s |%n", "Suur rida", "-", "-");
         System.out.printf("| %-10s | %-9s | %-9s |%n", "Maja", "-", "-");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "Summa", "-", "-");
+        System.out.printf("| %-10s | %-9s | %-9s |%n", "Chance", "-", "-");
         System.out.printf("| %-10s | %-9s | %-9s |%n", "YATZY", "-", "-");
         System.out.printf("--------------------------------------%n");
         System.out.printf("| %-10s | %-9s | %-9s |%n", "SUMMA", "-", "-");
