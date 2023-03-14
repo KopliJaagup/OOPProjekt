@@ -28,49 +28,82 @@ public class Täringud {
                 System.out.println("Sinu täringud on " + valitudTäringud);
             }
             System.out.println("Sisesta mitu täringut tahad alles jätta: ");
-            System.out.println("Juhul kui ei taha uuesti visata sisesta 0");
+            System.out.println("Juhul kui ei taha uuesti visata sisesta 5");
             Scanner mituTäringut = new Scanner(System.in); // mitu täringut jätta
             int mitu = mituTäringut.nextInt();
-
             if (Integer.parseInt(String.valueOf(mitu)) == 1) {
                 System.out.println("Sisesta nr milliseid täringuid tahad jätta: täring 1 = " + valitudTäringud.get(0) + " täring 2 = " + valitudTäringud.get(1) + " täring 3 = " + valitudTäringud.get(2) + " täring 4 = " + valitudTäringud.get(3) + " täring 5 = " + valitudTäringud.get(4));
                 Scanner jätaTäringud = new Scanner(System.in); // Millised täringud jätta:
                 int jäta = jätaTäringud.nextInt();
-                ArrayList uued = Visked(4);
-                ArrayList ajutine = new ArrayList<>();
-                ajutine.add(valitudTäringud.get(jäta - 1));
-                for (int i = 0; i < uued.size(); i++) {
-                    ajutine.add(uued.get(i));
+                if (jäta > 0 && jäta <= 5) {
+                    ArrayList uued = Visked(4);
+                    ArrayList ajutine = new ArrayList<>();
+                    ajutine.add(valitudTäringud.get(jäta - 1));
+                    for (int i = 0; i < uued.size(); i++) {
+                        ajutine.add(uued.get(i));
+                    }
+                    valitudTäringud = ajutine;
+                    viseteArv++;
                 }
-                valitudTäringud = ajutine;
-                viseteArv++;
-
+                else {
+                    System.out.println("Sisesta õige arv");
+                    a--;
+                }
             } else if (Integer.parseInt(String.valueOf(mitu)) == 2) {
                 ArrayList uued = Visked(3);
                 ArrayList ajutine = new ArrayList<>();
+                ArrayList print = valitudTäringud;
                 for (int j = 0; j < mitu; j++) {
-                    System.out.println("Sisesta nr milliseid täringuid tahad jätta: täring 1 = " + valitudTäringud.get(0) + " täring 2 = " + valitudTäringud.get(1) + " täring 3 = " + valitudTäringud.get(2) + " täring 4 = " + valitudTäringud.get(3) + " täring 5 = " + valitudTäringud.get(4));
+                    System.out.println("Sisesta nr milliseid täringuid tahad jätta: täring 1 = " + print.get(0) + " täring 2 = " + print.get(1) + " täring 3 = " + print.get(2) + " täring 4 = " + print.get(3) + " täring 5 = " + print.get(4));
                     Scanner jätaTäringud = new Scanner(System.in); // Millised täringud jätta:
                     int jäta = jätaTäringud.nextInt();
-                    ajutine.add(täringud.get(jäta - 1));
+                    if (jäta > 0 && jäta < 6) {
+                        ajutine.add(valitudTäringud.get(jäta - 1));
+                        if (j == 0){
+                        for (int i = 0; i < uued.size(); i++) {
+                            ajutine.add(uued.get(i));
+                         }
+                        }
+                        System.out.println(valitudTäringud);
+                        System.out.println(ajutine);
+
+                    }
+                    else{
+                        System.out.println("Sisesta õige arv");
+                        a--;
+                        j--;
                 }
-                for (int i = 0; i < uued.size(); i++) {
-                    ajutine.add(uued.get(i));
-                }
+
+            }
                 viseteArv++;
                 valitudTäringud = ajutine;
 
             } else if (Integer.parseInt(String.valueOf(mitu)) == 3) {
                 ArrayList uued = Visked(2);
                 ArrayList ajutine = new ArrayList<>();
+                ArrayList print = valitudTäringud;
                 for (int j = 0; j < mitu; j++) {
-                    System.out.println("Sisesta nr milliseid täringuid tahad jätta: täring 1 = " + valitudTäringud.get(0) + " täring 2 = " + valitudTäringud.get(1) + " täring 3 = " + valitudTäringud.get(2) + " täring 4 = " + valitudTäringud.get(3) + " täring 5 = " + valitudTäringud.get(4));
+                    System.out.println("Sisesta nr milliseid täringuid tahad jätta: täring 1 = " + print.get(0) + " täring 2 = " + print.get(1) + " täring 3 = " + print.get(2) + " täring 4 = " + print.get(3) + " täring 5 = " + print.get(4));
                     Scanner jätaTäringud = new Scanner(System.in); // Millised täringud jätta:
                     int jäta = jätaTäringud.nextInt();
-                    ajutine.add(täringud.get(jäta - 1));
-                }
-                for (int i = 0; i < uued.size(); i++) {
-                    ajutine.add(uued.get(i));
+                    if (jäta > 0 && jäta < 6) {
+                        ajutine.add(valitudTäringud.get(jäta - 1));
+                        if (j == 0){
+                            for (int i = 0; i < uued.size(); i++) {
+                                ajutine.add(uued.get(i));
+                            }
+                        }
+                        System.out.println(uued);
+                        System.out.println(valitudTäringud);
+                        System.out.println(ajutine);
+
+                    }
+                    else{
+                        System.out.println("Sisesta õige arv");
+                        a--;
+                        j--;
+                    }
+
                 }
                 viseteArv++;
                 valitudTäringud = ajutine;
@@ -78,14 +111,29 @@ public class Täringud {
             } else if (Integer.parseInt(String.valueOf(mitu)) == 4) {
                 ArrayList uued = Visked(1);
                 ArrayList ajutine = new ArrayList<>();
+                ArrayList print = valitudTäringud;
                 for (int j = 0; j < mitu; j++) {
-                    System.out.println("Sisesta nr milliseid täringuid tahad jätta: täring 1 = " + valitudTäringud.get(0) + " täring 2 = " + valitudTäringud.get(1) + " täring 3 = " + valitudTäringud.get(2) + " täring 4 = " + valitudTäringud.get(3) + " täring 5 = " + valitudTäringud.get(4));
-                    Scanner jätaTäringud = new Scanner(System.in); /* Millised valitudTäringud jätta: */
+                    System.out.println("Sisesta nr milliseid täringuid tahad jätta: täring 1 = " + print.get(0) + " täring 2 = " + print.get(1) + " täring 3 = " + print.get(2) + " täring 4 = " + print.get(3) + " täring 5 = " + print.get(4));
+                    Scanner jätaTäringud = new Scanner(System.in); // Millised täringud jätta:
                     int jäta = jätaTäringud.nextInt();
-                    ajutine.add(valitudTäringud.get(jäta - 1));
-                }
-                for (int i = 0; i < uued.size(); i++) {
-                    ajutine.add(uued.get(i));
+                    if (jäta > 0 && jäta < 6) {
+                        ajutine.add(valitudTäringud.get(jäta - 1));
+                        if (j == 0){
+                            for (int i = 0; i < uued.size(); i++) {
+                                ajutine.add(uued.get(i));
+                            }
+                        }
+                        System.out.println(uued);
+                        System.out.println(valitudTäringud);
+                        System.out.println(ajutine);
+
+                    }
+                    else{
+                        System.out.println("Sisesta õige arv");
+                        a--;
+                        j--;
+                    }
+
                 }
                 viseteArv++;
                 valitudTäringud = ajutine;
@@ -93,12 +141,6 @@ public class Täringud {
             }else if (Integer.parseInt(String.valueOf(mitu)) == 0) {
                     ArrayList uued = Visked(5);
                     ArrayList ajutine = new ArrayList<>();
-                    for (int j = 0; j < mitu; j++) {
-                        System.out.println("Sisesta nr milliseid täringuid tahad jätta: täring 1 = " + valitudTäringud.get(0) + " täring 2 = " + valitudTäringud .get(1) + " täring 3 = " + valitudTäringud.get(2) + " täring 4 = " + valitudTäringud.get(3) + " täring 5 = " + valitudTäringud.get(4));
-                        Scanner jätaTäringud = new Scanner(System.in); /* Millised valitudTäringud jätta: */
-                        int jäta = jätaTäringud.nextInt();
-                        ajutine.add(valitudTäringud.get(jäta - 1));
-                    }
                     for (int i = 0; i < uued.size(); i++) {
                         ajutine.add(uued.get(i));
                     }
@@ -107,6 +149,7 @@ public class Täringud {
 
             }else if (Integer.parseInt(String.valueOf(mitu)) == 5) {
                 viseteArv = 4;
+                break;
 
             }
             else {
