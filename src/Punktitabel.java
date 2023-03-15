@@ -117,6 +117,9 @@ public class Punktitabel {
         p1_sSumma_lisa(tulemus);
         this.p1_yatzy = Integer.toString(tulemus);
     }
+    public void setP1_boonus(int tulemus){
+        this.p1_boonus = Integer.toString(tulemus) ;
+    }
 
     public void setP2_yks(int tulemus) {
         p2_vSumma_lisa(tulemus);
@@ -197,6 +200,9 @@ public class Punktitabel {
     public void setP2_yatzy(int tulemus) {
         p2_sSumma_lisa(tulemus);
         this.p2_yatzy = Integer.toString(tulemus);
+    }
+    public void setP2_boonus(int tulemus){
+        this.p2_boonus = Integer.toString(tulemus);
     }
 
     public void p1_vSumma_lisa(int lisatav) {

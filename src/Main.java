@@ -20,8 +20,8 @@ public class Main {
                 punktitabel.näitaTabel2();
             }
         }
-
         punktitabel.näitaTabel2();
+
     }
 
     public static ArrayList käik() {

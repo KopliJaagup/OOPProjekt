@@ -9,6 +9,18 @@ public class Loogika {
         String koht;
         boolean tsükkel = true;
 
+        if ((punktitabel.getP1_yks() != -1 && punktitabel.getP1_kaks() != -1 && punktitabel.getP1_kolm() != -1 && punktitabel.getP1_neli() != -1 && punktitabel.getP1_viis() != -1 && punktitabel.getP1_kuus() != -1) && (punktitabel.getP1_yks() + punktitabel.getP1_kaks() * 2 + punktitabel.getP1_kolm() * 3 + punktitabel.getP1_neli() * 4 + punktitabel.getP1_viis() * 5 + punktitabel.getP1_kuus() * 6 >= 2)) {
+            punktitabel.setP1_boonus(50);
+        } else {
+            punktitabel.setP1_boonus(0);
+        }
+
+        if ((punktitabel.getP2_yks() != -1 && punktitabel.getP2_kaks() != -1 && punktitabel.getP2_kolm() != -1 && punktitabel.getP2_neli() != -1 && punktitabel.getP2_viis() != -1 && punktitabel.getP2_kuus() != -1) && (punktitabel.getP2_yks() + punktitabel.getP2_kaks() * 2 + punktitabel.getP2_kolm() * 3 + punktitabel.getP2_neli() * 4 + punktitabel.getP2_viis() * 5 + punktitabel.getP2_kuus() * 6 >= 36)) {
+            punktitabel.setP2_boonus(50);
+        } else {
+            punktitabel.setP2_boonus(0);
+        }
+
         while (tsükkel) {
             koht = scanner.nextLine().trim().toLowerCase();
             int summa = 0;
@@ -235,6 +247,7 @@ public class Loogika {
 
         return summa;
     }
+
     public static boolean paneYhed(int summa, Punktitabel punktitabel, int mängija) {
         boolean tsükkel = true;
         if (mängija == 1) {
