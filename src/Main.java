@@ -17,10 +17,22 @@ public class Main {
             Loogika.pane(täring, punktitabel, 2);
 
             if (i != 14) {
-                punktitabel.näitaTabel2();
+                punktitabel.näitaTabel();
             }
         }
-        punktitabel.näitaTabel2();
+
+        punktitabel.näitaTabel();
+
+        int skoor_p1 = punktitabel.getP1_sSumma();
+        int skoor_p2 = punktitabel.getP2_sSumma();
+
+        if (skoor_p1 > skoor_p2) {
+            System.out.println("Mängija 1 võitis!");
+        } else if (skoor_p2 > skoor_p1) {
+            System.out.println("Mängija 2 võitis!");
+        } else {
+            System.out.println("Mäng lõppes viigiga!");
+        }
 
     }
 

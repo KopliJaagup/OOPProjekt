@@ -477,36 +477,22 @@ public class Punktitabel {
         }
     }
 
-    public void näitatabel1() {
-        System.out.printf("--------------------------------------%n");
-        System.out.printf("|                YATZY               |%n");
-        System.out.printf("--------------------------------------%n");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "KATEGOORIA", "MÄNGIJA 1", "MÄNGIJA 2");
-        System.out.printf("--------------------------------------%n");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "Üks", "-", "-");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "Kaks", "-", "-");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "Kolm", "-", "-");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "Neli", "-", "-");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "Viis", "-", "-");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "Kuus", "-", "-");
-        System.out.printf("--------------------------------------%n");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "Summa", "-", "-");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "Boonus", "-", "-");
-        System.out.printf("--------------------------------------%n");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "Paar", "-", "-");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "Kaks paari", "-", "-");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "Kolmik", "-", "-");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "Nelik", "-", "-");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "Väike rida", "-", "-");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "Suur rida", "-", "-");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "Maja", "-", "-");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "Chance", "-", "-");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "YATZY", "-", "-");
-        System.out.printf("--------------------------------------%n");
-        System.out.printf("| %-10s | %-9s | %-9s |%n", "SUMMA", "-", "-");
-        System.out.printf("--------------------------------------%n");
+    public int getP1_vSumma() {
+        return Integer.parseInt(p1_vSumma);
     }
-    public void näitaTabel2() {
+
+    public int getP2_vSumma() {
+        return Integer.parseInt(p2_vSumma);
+    }
+
+    public int getP1_sSumma() {
+        return Integer.parseInt(p1_sSumma);
+    }
+
+    public int getP2_sSumma() {
+        return Integer.parseInt(p2_sSumma);
+    }
+    public void näitaTabel() {
         System.out.printf("---------------------------------------------------------------------------%n");
         System.out.printf("|                                  YATZY                                  |%n");
         System.out.printf("---------------------------------------------------------------------------%n");
