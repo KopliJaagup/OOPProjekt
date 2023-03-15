@@ -39,7 +39,6 @@ public class Täringud {
                 }
             }
 
-
             if (Integer.parseInt(String.valueOf(mitu)) == 1) {
                 System.out.println("Sisesta nr milliseid täringuid tahad jätta: täring 1 = " + valitudTäringud.get(0)
                         + " | täring 2 = " + valitudTäringud.get(1)
@@ -56,7 +55,7 @@ public class Täringud {
                         jäta = jätaTäringud.nextInt();
                         break;
                     } else {
-                        System.out.println("Sisesta õige number:");
+                        System.out.println("Sisesta number:");
                     }
                 }
 
@@ -70,8 +69,7 @@ public class Täringud {
                     valitudTäringud = ajutine;
                     viseteArv++;
                 } else {
-                    System.out.println("Sisesta õige arv");
-                    a--;
+                    System.out.println("Oled sisestanud arvu, mis pole vahemikus 1-5 või oled selle juba valinud.");
                 }
             } else if (Integer.parseInt(String.valueOf(mitu)) == 2) {
                 ArrayList uued = Visked(3);
@@ -94,7 +92,7 @@ public class Täringud {
                             jäta = jätaTäringud.nextInt();
                             break;
                         } else {
-                            System.out.println("Sisesta õige number:");
+                            System.out.println("Sisesta number:");
                         }
                     }
 
@@ -108,8 +106,7 @@ public class Täringud {
                         }
 
                     } else {
-                        System.out.println("Sisesta õige arv");
-                        a--;
+                        System.out.println("Oled sisestanud arvu, mis pole vahemikus 1-5 või oled selle juba valinud.");
                         j--;
                     }
 
@@ -138,9 +135,12 @@ public class Täringud {
                             jäta = jätaTäringud.nextInt();
                             break;
                         } else {
-                            System.out.println("Sisesta õige number:");
+                            System.out.println("Sisesta number:");
                         }
+
+
                     }
+                    System.out.println("asdf");
                     if (jäta > 0 && jäta < 6 && (!eitohi.contains(jäta))) {
                         ajutine.add(valitudTäringud.get(jäta - 1));
                         eitohi.add(jäta);
@@ -151,8 +151,7 @@ public class Täringud {
                         }
 
                     } else {
-                        System.out.println("Sisesta õige arv");
-                        a--;
+                        System.out.println("Oled sisestanud arvu, mis pole vahemikus 1-5 või oled selle juba valinud.");
                         j--;
                     }
 
@@ -180,7 +179,7 @@ public class Täringud {
                             jäta = jätaTäringud.nextInt();
                             break;
                         } else {
-                            System.out.println("Sisesta õige number:");
+                            System.out.println("Sisesta number:");
                         }
                     }
 
@@ -195,7 +194,6 @@ public class Täringud {
 
                     } else {
                         System.out.println("Oled sisestanud arvu, mis pole vahemikus 1-5 või oled selle juba valinud.");
-                        a--;
                         j--;
                     }
 
@@ -218,7 +216,7 @@ public class Täringud {
 
             } else {
                 System.out.println("Sisesta õige arv");
-                a = viseteArv - 1;
+                a--;
             }
 
             System.out.println("Sinu täringud on " + valitudTäringud);
